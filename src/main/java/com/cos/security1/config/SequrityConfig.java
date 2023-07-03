@@ -18,5 +18,4 @@ public class SequrityConfig extends WebSecurityConfigurerAdapter{
 			.antMatchers("/admin/**").access("hasRole('ROLE_ADMIN')")
 			.anyRequest().permitAll();
 	}
-	
 }
